@@ -1,0 +1,100 @@
+{
+    "shop": {
+        "currency": "XOF",
+        "language": "fr",
+        "weightUnit": "kg",
+        "name": "AFG Distribution Alimentaire",
+        "email": "support@afg-distribution.com",
+        "phone": "+221 33 123 4567",
+        "address": "123 Rue de la Logistique, Dakar, Sénégal"
+    },
+    "catalog": {
+        "product": {
+            "image": {
+                "thumbnail": {
+                    "width": 150,
+                    "height": 150
+                },
+                "listing": {
+                    "width": 300,
+                    "height": 300
+                },
+                "single": {
+                    "width": 600,
+                    "height": 600
+                }
+            }
+        },
+        "showOutOfStockProduct": false,
+        "categories": [
+            {
+                "id": "1",
+                "name": "Produits frais",
+                "slug": "produits-frais",
+                "image": "https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                "id": "2",
+                "name": "Produits secs",
+                "slug": "produits-secs",
+                "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&h=400"
+            },
+            {
+                "id": "3",
+                "name": "Boissons",
+                "slug": "boissons",
+                "image": "https://images.unsplash.com/photo-1559839914-17aae19cec71?auto=format&fit=crop&w=400&h=400"
+            }
+        ]
+    },
+    "pricing": {
+        "currency_format": "XOF {price}",
+        "tax_inclusive": true,
+        "tax_rate": 0.18
+    },
+    "system": {
+        "theme": "eve",
+        "extensions": [
+            {
+                "name": "productComment",
+                "resolve": "extensions/productComment",
+                "enabled": true,
+                "priority": 10
+            },
+            {
+                "name": "customBanner",
+                "resolve": "extensions/customBanner",
+                "enabled": true,
+                "priority": 20
+            }
+        ]
+    },
+    "theming": {
+        "primary_color": "#4CAF50",
+        "secondary_color": "#FFFFFF",
+        "fonts": {
+            "heading": "Roboto, sans-serif",
+            "body": "Open Sans, sans-serif"
+        },
+        "homepage_banner": {
+            "title": "Découvrez nos produits alimentaires de qualité",
+            "subtitle": "Livraison rapide et solutions adaptées à vos besoins",
+            "cta_label": "Explorer la boutique",
+            "cta_url": "/produits",
+            "image": "/images/afg-logo.JPG"
+        }
+    },
+    "customerAddressSchema": {
+        "fields": {
+            "first_name": { "required": true },
+            "last_name": { "required": true },
+            "phone": { "required": true },
+            "address_line_1": { "required": true },
+            "address_line_2": { "required": false },
+            "city": { "required": true },
+            "state": { "required": true },
+            "postal_code": { "required": true },
+            "country": { "required": true }
+        }
+    }
+}
